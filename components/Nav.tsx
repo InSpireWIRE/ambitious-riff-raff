@@ -36,6 +36,7 @@ export default function Nav() {
             { label: 'Collaborators', href: '#collaborators' },
             { label: 'Work', href: '#work' },
             { label: 'AlignAI', href: '#alignai' },
+            { label: '!nSpireWIRE', href: '#inspirewire' },
             { label: 'Contact', href: '#contact' },
           ].map(({ label, href }) => (
             <a
