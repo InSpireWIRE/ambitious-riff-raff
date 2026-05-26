@@ -36,14 +36,14 @@ export default function InspireWire() {
               variants={itemVariants}
               className="text-accent text-sm font-semibold tracking-widest uppercase"
             >
-              AI Visual Recreations
+              Lucid Dreaming™
             </motion.p>
 
             <motion.h2
               variants={itemVariants}
               className="font-serif font-semibold text-5xl lg:text-6xl leading-tight tracking-tight"
             >
-              !nSpireWIRE. Scenes that never existed — brought to the screen.
+              How does an art form rooted in human truth embrace technology built on artificial intelligence?
             </motion.h2>
 
             <div className="space-y-4">
@@ -51,29 +51,29 @@ export default function InspireWire() {
                 variants={itemVariants}
                 className="text-muted leading-[1.65] max-w-2xl"
               >
-                Platform-agnostic AI-powered recreations for documentary and true crime. We work with filmmakers to identify what the story needs, then assemble the best combination of AI technology and human artistry to make it real. No single tool does it all. We do.
+                By treating AI not as the storyteller — but as the tool. LUCID DREAMING™ blends human creativity, editorial judgment, and custom AI workflows to reconstruct memory, testimony, evidence, and uncertainty.
               </motion.p>
 
               <motion.p
                 variants={itemVariants}
                 className="text-muted leading-[1.65] max-w-2xl"
               >
-                Three tiers of output — from{' '}
-                <span className="bg-[#F5F0E8] text-fg rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide">Stylized & Animated</span>
-                {' to '}
-                <span className="bg-[#F5F0E8] text-fg rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide">Cinematic & Atmospheric</span>
-                {' to '}
-                <span className="bg-[#F5F0E8] text-fg rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide">Photorealistic</span>
-                {' — at 60–80% less than traditional recreation budgets.'}
+                Built for true crime, documentary, and premium non-fiction storytelling, our process transforms fragmented source material into emotionally powerful, broadcast-ready recreations designed to live inside real stories — not compete with them.
               </motion.p>
             </div>
 
             <motion.div variants={itemVariants} className="space-y-4">
               <p className="text-accent text-xs font-medium tracking-widest uppercase">
-                Capabilities
+                The Framework
               </p>
               <p className="text-muted leading-[1.65] max-w-2xl">
-                Scene generation from script descriptions. Character consistency across episodes. Location reconstruction from reference photos and satellite imagery. Controlled cinematography. Integrated audio design. Identity protection for anonymous participants.
+                Every recreation is categorized by narrative intent and evidentiary status:{' '}
+                <span className="bg-[#F5F0E8] text-fg rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide">Factual</span>
+                {', '}
+                <span className="bg-[#F5F0E8] text-fg rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide">Memory / Subjective</span>
+                {', or '}
+                <span className="bg-[#F5F0E8] text-fg rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide">Speculative</span>
+                {'. Because in true crime and non-scripted storytelling: how you recreate matters.'}
               </p>
             </motion.div>
 
@@ -94,21 +94,21 @@ export default function InspireWire() {
               variants={itemVariants}
               className="text-accent text-sm font-semibold tracking-widest uppercase"
             >
-              Why It Matters
+              Innovation + Integrity
             </motion.p>
 
             <motion.h3
               variants={itemVariants}
               className="font-serif font-semibold text-3xl lg:text-4xl leading-tight tracking-tight"
             >
-              The budget killed the scene. We bring it back.
+              Innovation means nothing if the integrity of the art is left behind.
             </motion.h3>
 
             <motion.p
               variants={itemVariants}
               className="text-lg leading-relaxed"
             >
-              True crime and documentary productions spend $15–50K per episode on traditional recreations — actors, sets, B-unit crews. AI recreations deliver broadcast-quality output in days, not weeks, at a fraction of the cost. Built by producers, for producers.
+              Platform-agnostic. Technology-agnostic. We assemble the best AI tools and human artistry for each project — at 60–80% less than traditional recreation budgets. No actors. No sets. No B-unit crews. Just broadcast-ready scenes, delivered in days.
             </motion.p>
 
             <motion.a
