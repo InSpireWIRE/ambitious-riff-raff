@@ -4,6 +4,7 @@ import About from '../components/About'
 import Collaborators from '../components/Collaborators'
 import Work from '../components/Work'
 import AlignAI from '../components/AlignAI'
+import InspireWire from '../components/InspireWire'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Collaborators />
       <Work />
       <AlignAI />
+      <InspireWire />
       <Contact />
       <Footer />
     </>
