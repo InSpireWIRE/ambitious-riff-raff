@@ -10,6 +10,7 @@ const pitchTheme = {
   '--p-cream': '#F4F1EA', // primary text
   '--p-haze': '#8C93AC', // muted text / borders
   '--p-bright': '#FAF7F2', // accent / highlight
+  '--accent': '#FAF7F2', // override the site's terracotta focus ring inside the deck
 } as CSSProperties
 
 export default function PitchLayout({

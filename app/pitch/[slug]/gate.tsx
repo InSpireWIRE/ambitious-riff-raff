@@ -10,6 +10,11 @@ export default function Gate({ slug, title }: { slug: string; title: string }) {
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
 
+  // Show the first word on its own line, the rest below
+  // ("Untitled" / "True Crime Podcast").
+  const [titleHead, ...titleRestParts] = title.split(' ')
+  const titleRest = titleRestParts.join(' ')
+
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!password || loading) return
@@ -43,10 +48,21 @@ export default function Gate({ slug, title }: { slug: string; title: string }) {
       <div className="w-full max-w-sm rounded-3xl border border-[var(--p-haze)]/15 bg-[var(--p-panel)] p-8 shadow-sm md:p-10">
         <div className="flex flex-col items-center text-center">
           <AR2Mark size={144} className="opacity-90 invert" />
-          <p className="mt-6 text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-haze)]">
+          <p className="mt-4 font-[family-name:var(--font-fraunces)] text-lg text-[var(--p-cream)]">
+            Ambitious Riff Raff
+          </p>
+          <p className="mt-5 text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-haze)]">
             Pitch access
           </p>
-          <h1 className="mt-2 font-[family-name:var(--font-fraunces)] text-2xl leading-tight text-[var(--p-cream)]">{title}</h1>
+          <h1 className="mt-2 font-[family-name:var(--font-fraunces)] text-2xl leading-tight text-[var(--p-cream)]">
+            {titleHead}
+            {titleRest && (
+              <>
+                <br />
+                {titleRest}
+              </>
+            )}
+          </h1>
         </div>
 
         <form onSubmit={onSubmit} className="mt-8 space-y-4">
