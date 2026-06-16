@@ -37,6 +37,7 @@ export default function Nav() {
             { label: 'Work', href: '#work' },
             { label: 'AlignAI', href: '#alignai' },
             { label: 'Contact', href: '#contact' },
+            { label: 'Pitch', href: '/pitch/true-crime-1' },
           ].map(({ label, href }) => (
             <a
               key={label}
