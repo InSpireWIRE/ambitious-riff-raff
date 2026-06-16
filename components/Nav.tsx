@@ -38,6 +38,7 @@ export default function Nav() {
             { label: 'AlignAI', href: '#alignai' },
             { label: '!nSpireWIRE', href: '#inspirewire' },
             { label: 'Contact', href: '#contact' },
+            { label: 'Pitch', href: '/pitch/true-crime-1' },
           ].map(({ label, href }) => (
             <a
               key={label}
