@@ -29,21 +29,31 @@ function Block({ block }: { block: ChapterBlock }) {
         <VideoEmbed provider={block.provider} src={block.src} title={block.title} />
       )
 
-    case 'image':
+    case 'image': {
+      const aspectClass =
+        block.aspect === '4/5'
+          ? 'aspect-[4/5]'
+          : block.aspect === '1/1'
+            ? 'aspect-square'
+            : 'aspect-[3/2]'
+      // Portrait/square images read best centered at a contained hero width;
+      // landscape keeps the full content width it has always had.
+      const isPortrait = block.aspect === '4/5' || block.aspect === '1/1'
       return (
-        <figure className="my-10">
-          <div className="overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-sm transition-shadow hover:shadow-lg">
+        <figure className={`my-10 ${isPortrait ? 'mx-auto max-w-md' : ''}`}>
+          <div className="overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-md ring-1 ring-[var(--p-bright)]/15 transition-all duration-300 hover:shadow-xl hover:ring-[var(--p-bright)]/35">
             <PitchImage
               src={block.src}
               alt={block.alt}
-              className="aspect-[3/2] w-full object-cover transition-transform duration-500 hover:scale-[1.02]"
+              className={`${aspectClass} w-full object-cover transition-transform duration-500 hover:scale-[1.02]`}
             />
           </div>
           {block.caption && (
-            <figcaption className="mt-3 text-sm text-[var(--p-haze)]">{block.caption}</figcaption>
+            <figcaption className={`mt-3 text-sm text-[var(--p-haze)] ${isPortrait ? 'text-center' : ''}`}>{block.caption}</figcaption>
           )}
         </figure>
       )
+    }
 
     case 'gallery':
       return <ImageGallery images={block.images} />
