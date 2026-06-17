@@ -7,7 +7,7 @@ export type ChapterBlock =
   | { type: 'pullquote'; content: string; attribution?: string }
   | { type: 'audio'; src: string; title: string; description?: string }
   | { type: 'video'; provider: 'vimeo' | 'youtube' | 'self'; src: string; title: string }
-  | { type: 'image'; src: string; alt: string; caption?: string }
+  | { type: 'image'; src: string; alt: string; caption?: string; aspect?: '3/2' | '4/5' | '1/1' }
   | { type: 'gallery'; images: { src: string; alt: string; caption?: string }[] }
   | { type: 'list'; items: string[] }
   | { type: 'stat'; value: string; label: string }

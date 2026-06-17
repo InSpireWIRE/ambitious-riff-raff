@@ -23,15 +23,24 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
 
   const open = active !== null ? images[active] : null
 
+  // Size the grid to the photo count so 1 photo centers, 2 sit as a clean 2-up,
+  // and 3+ fill a 3-wide row — no stranded empty cells.
+  const colClass =
+    images.length <= 1
+      ? 'mx-auto max-w-md grid-cols-1'
+      : images.length === 2
+        ? 'grid-cols-1 sm:grid-cols-2'
+        : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
+
   return (
     <>
-      <div className="my-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className={`my-10 grid gap-4 ${colClass}`}>
         {images.map((image, i) => (
           <button
             key={image.src}
             type="button"
             onClick={() => setActive(i)}
-            className="group overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-sm transition-shadow hover:shadow-lg focus-visible:shadow-lg"
+            className="group overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-md ring-1 ring-[var(--p-bright)]/15 transition-all hover:shadow-xl hover:ring-[var(--p-bright)]/35 focus-visible:shadow-xl"
           >
             <PitchImage
               src={image.src}

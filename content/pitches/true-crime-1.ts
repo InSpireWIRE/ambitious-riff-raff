@@ -15,6 +15,19 @@ const trueCrime1: Pitch = {
       title: 'Logline',
       blocks: [
         {
+          type: 'gallery',
+          images: [
+            {
+              src: '/pitch/true-crime-1/logline-1.jpg',
+              alt: 'Logline photo',
+            },
+            {
+              src: '/pitch/true-crime-1/logline-2.jpg',
+              alt: 'Logline photo',
+            },
+          ],
+        },
+        {
           type: 'pullquote',
           content:
             'What happens when love, addiction, and denial blind you to the truth — and the truth is five women are dead',
