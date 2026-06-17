@@ -58,7 +58,7 @@ function Block({ block }: { block: ChapterBlock }) {
 
     case 'accent':
       return (
-        <p className="my-10 text-center font-[family-name:var(--font-fraunces)] text-xl italic leading-snug text-[var(--p-cream)] md:text-2xl">
+        <p className="my-10 whitespace-pre-line text-center font-[family-name:var(--font-fraunces)] text-xl italic leading-snug text-[var(--p-cream)] md:text-2xl">
           {block.content}
         </p>
       )

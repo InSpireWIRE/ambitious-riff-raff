@@ -87,7 +87,7 @@ const trueCrime1: Pitch = {
         },
         {
           type: 'accent',
-          content: 'how much did she not see — and how much did she choose not to?',
+          content: 'how much did she not see —\nand how much did she choose not to?',
         },
         {
           type: 'paragraph',
@@ -150,8 +150,11 @@ const trueCrime1: Pitch = {
       blocks: [
         {
           type: 'paragraph',
-          content:
-            "This isn't a cold case waiting to be revived. It's a live story building toward its peak.",
+          content: "This isn't a cold case waiting to be revived.",
+        },
+        {
+          type: 'accent',
+          content: "It's a live story building toward its peak.",
         },
         {
           type: 'paragraph',
@@ -172,9 +175,13 @@ const trueCrime1: Pitch = {
           ],
         },
         {
+          type: 'accent',
+          content: 'Three victims became four. Four became five.',
+        },
+        {
           type: 'paragraph',
           content:
-            'Three victims became four. Four became five. Investigators have signaled the count may not be final. Each indictment has pulled the story back into the national conversation — bigger every time.',
+            'Investigators have signaled the count may not be final. Each indictment has pulled the story back into the national conversation — bigger every time.',
         },
         {
           type: 'paragraph',
@@ -184,7 +191,12 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            'Every one of these outlets covered the case — the charges, the courtroom, the victims. Not one of them has the story behind the story, and not one of them can get it. No one else was inside the home, inside the relationship, recording in real time as the woman who loved Jesse Lee Calhoun moved from denial to realization to grief.',
+            'Every one of these outlets covered the case — the charges, the courtroom, the victims. Not one of them has the story behind the story, and not one of them can get it.',
+        },
+        {
+          type: 'accent',
+          content:
+            'No one else was inside the home, inside the relationship, recording in real time as the woman who loved Jesse Lee Calhoun moved from denial to realization to grief.',
         },
         {
           type: 'paragraph',
