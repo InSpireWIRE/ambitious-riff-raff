@@ -23,12 +23,12 @@ const trueCrime1: Pitch = {
           type: 'gallery',
           images: [
             {
-              src: '/pitch/true-crime-1/logline-1.jpg',
-              alt: 'Logline photo',
+              src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Lake.jpg',
+              alt: 'Krista and Jesse at the beach',
             },
             {
-              src: '/pitch/true-crime-1/logline-2.jpg',
-              alt: 'Logline photo',
+              src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Love.jpg',
+              alt: 'Krista and Jesse at home',
             },
           ],
         },
