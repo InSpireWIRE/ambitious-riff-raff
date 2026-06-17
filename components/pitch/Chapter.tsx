@@ -119,18 +119,11 @@ export default function Chapter({ chapter }: { chapter: ChapterType }) {
       id={chapter.id}
       className="relative isolate scroll-mt-24 border-b border-[var(--p-haze)]/10 py-20 first:pt-12 last:border-b-0 md:py-32"
     >
-      {/* Oversized chapter numeral watermark — editorial accent for the deck */}
-      <span
-        aria-hidden
-        className="pointer-events-none absolute -top-1 right-0 -z-10 select-none font-[family-name:var(--font-fraunces)] leading-none text-[var(--p-cream)]/[0.035] text-[4.5rem] md:-top-4 md:text-[8rem]"
-      >
-        {chapter.number}
-      </span>
-
-      <p className="mb-3 text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-bright)]">
+      <p className="mb-3 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-bright)]">
+        <span aria-hidden className="h-px w-8 bg-[var(--p-bright)]/50" />
         Chapter {chapter.number}
       </p>
-      <h2 className="font-[family-name:var(--font-fraunces)] text-2xl font-medium leading-tight tracking-tight text-[var(--p-cream)]/85 md:text-3xl">
+      <h2 className="font-[family-name:var(--font-fraunces)] text-3xl font-semibold leading-tight tracking-tight text-[var(--p-cream)] md:text-4xl">
         {chapter.title}
       </h2>
       <div className="mt-8">{renderBlocks(chapter.blocks)}</div>
