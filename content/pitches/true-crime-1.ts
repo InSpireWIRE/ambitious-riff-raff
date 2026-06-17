@@ -73,12 +73,6 @@ const trueCrime1: Pitch = {
           content:
             'Five women are dead. Calhoun stands indicted for all five murders. And the woman who loved him is left to live with what she knew, when she knew it, and what it cost her not to ask.',
         },
-        {
-          type: 'image',
-          src: '/pitch/true-crime-1/story-1.jpg',
-          alt: 'Placeholder — key location or evidence image',
-          caption: 'Placeholder caption — establishing image for the case.',
-        },
       ],
     },
     {
