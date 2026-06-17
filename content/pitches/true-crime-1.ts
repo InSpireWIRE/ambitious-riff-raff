@@ -30,6 +30,10 @@ const trueCrime1: Pitch = {
               src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Love.jpg',
               alt: 'Krista and Jesse at home',
             },
+            {
+              src: '/pitch/true-crime-1/Jesse_Krista_Bed_No_Shirt_.jpg',
+              alt: 'Krista and Jesse',
+            },
           ],
         },
       ],
