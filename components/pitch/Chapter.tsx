@@ -3,6 +3,7 @@ import AudioPlayer from './AudioPlayer'
 import ImageGallery from './ImageGallery'
 import PitchImage from './PitchImage'
 import PullQuote from './PullQuote'
+import VictimGallery from './VictimGallery'
 import VideoEmbed from './VideoEmbed'
 
 function Block({ block }: { block: ChapterBlock }) {
@@ -57,6 +58,9 @@ function Block({ block }: { block: ChapterBlock }) {
 
     case 'gallery':
       return <ImageGallery images={block.images} />
+
+    case 'victims':
+      return <VictimGallery victims={block.victims} />
 
     case 'list':
       return (

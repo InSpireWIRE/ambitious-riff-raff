@@ -76,8 +76,55 @@ const trueCrime1: Pitch = {
       ],
     },
     {
-      id: 'why-now',
+      id: 'victims',
       number: '03',
+      title: 'Victims',
+      blocks: [
+        {
+          type: 'victims',
+          victims: [
+            {
+              name: 'Kristin Smith',
+              age: 22,
+              found: 'February 19, 2023',
+              photo: '/pitch/true-crime-1/victim-kristin-smith.jpg',
+              bio: 'Kristin was creative and playful, forever keeping her mom and sister on their toes with new wigs and reinvented looks. She loved animals — grew up riding horses with her grandparents and last worked at an animal hospital — and she dreamed of launching her own press-on nail business built around her bold, artistic designs. That future was cut short after she got involved with a boyfriend who introduced her to fentanyl, abused her, and isolated her from her family.',
+            },
+            {
+              name: 'Joanna Speaks',
+              age: 32,
+              found: 'April 8, 2023',
+              photo: '/pitch/true-crime-1/victim-joanna-speaks.jpg',
+              bio: "Joanna was vivid company — quick-laughing, sharp-tongued, never shy with an opinion. When fentanyl swept through Portland, addiction pulled her under and her life came apart; she served three years in prison for her part in a robbery. After her release she found a stretch of sobriety, but a new boyfriend drew her back into using. Her sister Ariel took in Joanna's two sons, and Joanna gradually went quiet. The family learned of her death in April 2023.",
+            },
+            {
+              name: 'Charity Perry',
+              age: 24,
+              found: 'April 24, 2023',
+              photo: '/pitch/true-crime-1/victim-charity-perry.jpg',
+              bio: 'Charity was generous and driven from childhood, the kind of kid who ran fundraisers for hurricane victims and gathered dog food for the Humane Society. She had a sweet tooth — cotton candy above all — and when she died, her mother, Diana, made certain it was there at her memorial. Her life was also marked by hardship: signs of mental illness surfaced when she was just seven, and she was later diagnosed with schizophrenia. In time she ended up living on the street, where drugs became a way to self-medicate.',
+            },
+            {
+              name: 'Bridget Webster',
+              age: 31,
+              found: 'April 30, 2023',
+              photo: '/pitch/true-crime-1/victim-bridget-webster.jpg',
+              bio: 'Bridget is remembered for loyalty and a smile that caught on with everyone around her. A standout student and a genuinely kind person, she was the friend who turned up exactly when things fell apart, steady when steadiness was what you needed most. Those who knew her say her warmth and dependability still set the example they measure themselves against.',
+            },
+            {
+              name: 'Ashley Real',
+              age: 22,
+              found: 'May 7, 2023',
+              photo: '/pitch/true-crime-1/victim-ashley-real.jpg',
+              bio: "Ashley was adventurous and refreshingly direct — black hair, a nose piercing, and no hesitation about saying what she thought. That boldness stuck with the people she met. She'd been a strong student before falling in with the wrong crowd. In the period before her death, she had filed a domestic violence complaint against the man who would later become the prime suspect in the murders.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'why-now',
+      number: '04',
       title: 'Why Now',
       blocks: [
         {
@@ -96,7 +143,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'listen',
-      number: '04',
+      number: '05',
       title: 'Listen',
       blocks: [
         {
@@ -126,7 +173,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'format-episodes',
-      number: '05',
+      number: '06',
       title: 'Format & Episodes',
       blocks: [
         {
@@ -150,7 +197,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'voice-host',
-      number: '06',
+      number: '07',
       title: 'Voice & Host',
       blocks: [
         {
@@ -180,7 +227,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'access-sources',
-      number: '07',
+      number: '08',
       title: 'Access & Sources',
       blocks: [
         {
@@ -200,7 +247,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'comps',
-      number: '08',
+      number: '09',
       title: 'Comps',
       blocks: [
         {
@@ -225,7 +272,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'team',
-      number: '09',
+      number: '10',
       title: 'Team',
       blocks: [
         {
@@ -244,7 +291,7 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'the-ask',
-      number: '10',
+      number: '11',
       title: 'The Ask',
       blocks: [
         {

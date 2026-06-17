@@ -9,6 +9,16 @@ export type ChapterBlock =
   | { type: 'video'; provider: 'vimeo' | 'youtube' | 'self'; src: string; title: string }
   | { type: 'image'; src: string; alt: string; caption?: string; aspect?: '3/2' | '4/5' | '1/1' }
   | { type: 'gallery'; images: { src: string; alt: string; caption?: string }[] }
+  | {
+      type: 'victims'
+      victims: {
+        name: string
+        age: number
+        found: string // date the body was found, e.g. "April 24, 2023"
+        photo: string
+        bio: string
+      }[]
+    }
   | { type: 'list'; items: string[] }
   | { type: 'stat'; value: string; label: string }
 
