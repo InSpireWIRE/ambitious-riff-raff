@@ -217,7 +217,7 @@ const trueCrime1: Pitch = {
       blocks: [
         {
           type: 'audio',
-          src: '/pitch/true-crime-1/audio/voices.m4a',
+          src: '/pitch/true-crime-1/audio/voices.mp3',
           title: 'Voices',
         },
         {
