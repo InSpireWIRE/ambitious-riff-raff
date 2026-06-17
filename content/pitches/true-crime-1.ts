@@ -222,14 +222,13 @@ const trueCrime1: Pitch = {
         },
         {
           type: 'audio',
-          src: '/pitch/true-crime-1/audio/jesse-prove-something.m4a',
+          src: '/pitch/true-crime-1/audio/jesse-prove-something.mp3',
           title: 'Was Jesse Trying To Prove Something?',
         },
         {
           type: 'audio',
-          src: '/pitch/true-crime-1/audio/music-bed.mp3',
-          title: 'Music bed',
-          description: 'Placeholder — the score and sonic palette.',
+          src: '/pitch/true-crime-1/audio/cops-visit-krista.mp3',
+          title: 'Cops Visit Krista to Connect Joanna to Jesse on the Day She Died',
         },
         {
           type: 'paragraph',
