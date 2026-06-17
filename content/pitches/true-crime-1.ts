@@ -217,9 +217,8 @@ const trueCrime1: Pitch = {
       blocks: [
         {
           type: 'audio',
-          src: '/pitch/true-crime-1/audio/sizzle.mp3',
-          title: 'Sizzle reel',
-          description: 'Placeholder — 90-second proof-of-concept cut.',
+          src: '/pitch/true-crime-1/audio/voices.m4a',
+          title: 'Voices',
         },
         {
           type: 'audio',
