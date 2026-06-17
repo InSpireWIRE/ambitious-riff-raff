@@ -6,7 +6,7 @@ const trueCrime1: Pitch = {
   title: 'Untitled True Crime Podcast',
   subtitle: 'A limited-series true crime podcast',
   logline:
-    'What happens when love, addiction, and denial blind you to the truth — and the truth is five women are dead?',
+    'What happens when love, addiction, and denial blind you to the truth —\nand the truth is\nfive women are dead…',
   coverImage: '/pitch/true-crime-1/cover.jpg',
   chapters: [
     {
@@ -17,7 +17,7 @@ const trueCrime1: Pitch = {
         {
           type: 'pullquote',
           content:
-            "[Untitled Podcast] follows one woman's harrowing journey — through denial, realization, and grief — as she confronts the possibility that the man she loved is a serial killer, and that she may have been closer to it than she ever let herself know.",
+            "One woman's harrowing journey —\nthrough denial, realization, and grief —\nas she confronts the possibility that the man she loved is a serial killer, and that she may have been closer to it than she ever let herself know.",
         },
         {
           type: 'gallery',

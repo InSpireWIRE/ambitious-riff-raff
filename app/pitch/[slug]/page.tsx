@@ -4,6 +4,7 @@ import { getPitch } from '@/content/pitches'
 import { cookieName, verifyToken } from '@/lib/pitch-auth'
 import Chapter from '@/components/pitch/Chapter'
 import Sidebar from '@/components/pitch/Sidebar'
+import StaggeredLines from '@/components/pitch/StaggeredLines'
 import Gate from './gate'
 
 export default async function PitchPage({
@@ -23,11 +24,14 @@ export default async function PitchPage({
     return <Gate slug={slug} title={pitch.title} />
   }
 
-  const navItems = pitch.chapters.map((c) => ({
-    id: c.id,
-    number: c.number,
-    title: c.title,
-  }))
+  const navItems = [
+    { id: 'title', number: '00', title: 'Title' },
+    ...pitch.chapters.map((c) => ({
+      id: c.id,
+      number: c.number,
+      title: c.title,
+    })),
+  ]
 
   return (
     <div className="md:flex">
@@ -35,17 +39,20 @@ export default async function PitchPage({
 
       <main className="min-w-0 flex-1 md:ml-[280px]">
         <div className="mx-auto max-w-3xl px-6 md:px-12">
-          <header className="pt-20 md:pt-32">
+          <section
+            id="title"
+            className="flex min-h-[88vh] scroll-mt-24 flex-col justify-center pb-16 pt-16 md:pt-24"
+          >
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-[var(--p-bright)]">
               {pitch.subtitle}
             </p>
             <h1 className="mt-4 font-[family-name:var(--font-fraunces)] text-xl font-medium leading-tight tracking-tight text-[var(--p-cream)]/90 md:text-2xl">
               {pitch.title}
             </h1>
-            <p className="mt-6 max-w-2xl font-[family-name:var(--font-fraunces)] text-[1.6rem] font-normal leading-[1.2] text-[var(--p-cream)] md:text-[2.25rem]">
-              {pitch.logline}
+            <p className="mt-8 max-w-2xl font-[family-name:var(--font-fraunces)] text-[1.7rem] font-normal leading-[1.25] text-[var(--p-cream)] md:text-[2.5rem] md:leading-[1.18]">
+              <StaggeredLines text={pitch.logline} step={1.5} />
             </p>
-          </header>
+          </section>
 
           {pitch.chapters.map((chapter) => (
             <Chapter key={chapter.id} chapter={chapter} />

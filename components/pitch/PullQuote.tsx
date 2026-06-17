@@ -1,3 +1,5 @@
+import StaggeredLines from './StaggeredLines'
+
 type PullQuoteProps = {
   content: string
   attribution?: string
@@ -14,7 +16,7 @@ export default function PullQuote({ content, attribution }: PullQuoteProps) {
           &ldquo;
         </span>
         <p className="font-[family-name:var(--font-fraunces)] text-xl font-normal italic leading-relaxed text-[var(--p-cream)] md:text-[1.65rem] md:leading-[1.45]">
-          {content}
+          <StaggeredLines text={content} step={1.25} />
         </p>
       </blockquote>
       {attribution && (
