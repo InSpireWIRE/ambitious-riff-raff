@@ -46,17 +46,32 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            'Placeholder. Open on the night everything changed. Set the scene, the people, the place — the ordinary world a few hours before it broke. This first paragraph should land the reader inside the story, not above it.',
+            'Between November 2022 and April 2023, five women vanished.',
         },
         {
           type: 'paragraph',
           content:
-            'Placeholder. The middle of the case: the investigation, the dead ends, the detail everyone missed. Lay out the question the series will spend its run answering, and hint at why the obvious answer is wrong.',
+            'Kristin Smith. Joanna Speaks. Charity Lynn Perry. Bridget Leanne Webster. Ashley Real. Close in age. Alike in look. The same type. One after another, they disappeared — and one after another, they were found murdered.',
         },
         {
           type: 'paragraph',
           content:
-            'Placeholder. The stakes today: who is still living with this, what remains unresolved, and why telling it now matters. End on the tension that pulls a listener into episode two.',
+            'During those same months, another woman was watching the man she loved and fearing the ordinary thing: that he was cheating. She started looking. What she found was not an affair.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'It was the names. The vanished women had one thing in common — they led back to the man she lived with. The man who shared her bed, her life, and the raising of her children.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            "This is her story, told from inside it — recorded across three years, beginning the day Jesse Lee Calhoun was arrested. It is the story of a woman moving through denial, realization, and grief, circling the question she still can't fully answer: how much did she not see — and how much did she choose not to?",
+        },
+        {
+          type: 'paragraph',
+          content:
+            'Five women are dead. Calhoun stands indicted for all five murders. And the woman who loved him is left to live with what she knew, when she knew it, and what it cost her not to ask.',
         },
         {
           type: 'image',
