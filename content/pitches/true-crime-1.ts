@@ -222,9 +222,8 @@ const trueCrime1: Pitch = {
         },
         {
           type: 'audio',
-          src: '/pitch/true-crime-1/audio/host-sample.mp3',
-          title: 'Host voice sample',
-          description: 'Placeholder — the host carrying a scene.',
+          src: '/pitch/true-crime-1/audio/jesse-prove-something.m4a',
+          title: 'Was Jesse Trying To Prove Something?',
         },
         {
           type: 'audio',
