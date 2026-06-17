@@ -6,7 +6,7 @@ const trueCrime1: Pitch = {
   title: 'Untitled True Crime Podcast',
   subtitle: 'A limited-series true crime podcast',
   logline:
-    'One sentence. The hook that makes a network lean in. [Placeholder — replace with the actual logline.]',
+    'What happens when love, addiction, and denial blind you to the truth — and the truth is five women are dead?',
   coverImage: '/pitch/true-crime-1/cover.jpg',
   chapters: [
     {
@@ -14,6 +14,11 @@ const trueCrime1: Pitch = {
       number: '01',
       title: 'Logline',
       blocks: [
+        {
+          type: 'pullquote',
+          content:
+            "[Untitled Podcast] follows one woman's harrowing journey — through denial, realization, and grief — as she confronts the possibility that the man she loved is a serial killer, and that she may have been closer to it than she ever let herself know.",
+        },
         {
           type: 'gallery',
           images: [
@@ -26,11 +31,6 @@ const trueCrime1: Pitch = {
               alt: 'Logline photo',
             },
           ],
-        },
-        {
-          type: 'pullquote',
-          content:
-            'What happens when love, addiction, and denial blind you to the truth — and the truth is five women are dead',
         },
       ],
     },
