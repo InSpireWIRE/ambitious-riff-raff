@@ -36,13 +36,13 @@ export default async function PitchPage({
       <main className="min-w-0 flex-1 md:ml-[280px]">
         <div className="mx-auto max-w-3xl px-6 md:px-12">
           <header className="pt-20 md:pt-32">
-            <p className="text-sm font-medium uppercase tracking-[0.25em] text-[var(--p-bright)]">
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-[var(--p-bright)]">
               {pitch.subtitle}
             </p>
-            <h1 className="mt-4 font-[family-name:var(--font-fraunces)] text-5xl leading-[1.05] text-[var(--p-cream)] md:text-7xl">
+            <h1 className="mt-5 font-[family-name:var(--font-fraunces)] text-3xl font-medium leading-[1.05] tracking-tight text-[var(--p-cream)]/80 md:text-[2.75rem]">
               {pitch.title}
             </h1>
-            <p className="mt-8 max-w-2xl font-[family-name:var(--font-fraunces)] text-2xl leading-snug text-[var(--p-cream)]/70 md:text-3xl">
+            <p className="mt-7 max-w-2xl font-[family-name:var(--font-fraunces)] text-[1.6rem] leading-[1.3] text-[var(--p-cream)] md:text-[2.25rem] md:leading-[1.25]">
               {pitch.logline}
             </p>
           </header>

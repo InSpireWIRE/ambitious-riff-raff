@@ -122,15 +122,15 @@ export default function Chapter({ chapter }: { chapter: ChapterType }) {
       {/* Oversized chapter numeral watermark — editorial accent for the deck */}
       <span
         aria-hidden
-        className="pointer-events-none absolute -top-2 right-0 -z-10 select-none font-[family-name:var(--font-fraunces)] leading-none text-[var(--p-cream)]/[0.05] text-[7rem] md:-top-8 md:text-[13rem]"
+        className="pointer-events-none absolute -top-1 right-0 -z-10 select-none font-[family-name:var(--font-fraunces)] leading-none text-[var(--p-cream)]/[0.035] text-[4.5rem] md:-top-4 md:text-[8rem]"
       >
         {chapter.number}
       </span>
 
-      <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-[var(--p-bright)]">
+      <p className="mb-3 text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-bright)]">
         Chapter {chapter.number}
       </p>
-      <h2 className="font-[family-name:var(--font-fraunces)] text-4xl leading-tight text-[var(--p-cream)] md:text-5xl">
+      <h2 className="font-[family-name:var(--font-fraunces)] text-2xl font-medium leading-tight tracking-tight text-[var(--p-cream)]/85 md:text-3xl">
         {chapter.title}
       </h2>
       <div className="mt-8">{renderBlocks(chapter.blocks)}</div>
