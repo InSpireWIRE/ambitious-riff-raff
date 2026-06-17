@@ -17,7 +17,7 @@ const trueCrime1: Pitch = {
         {
           type: 'pullquote',
           content:
-            'What happens when love, addiction, and denial keep you from seeing the truth — and the truth is five women are dead?',
+            'What happens when love, addiction, and denial blind you to the truth — and the truth is five women are dead',
         },
       ],
     },
