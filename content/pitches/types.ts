@@ -5,6 +5,7 @@
 export type ChapterBlock =
   | { type: 'paragraph'; content: string }
   | { type: 'pullquote'; content: string; attribution?: string }
+  | { type: 'accent'; content: string }
   | { type: 'audio'; src: string; title: string; description?: string }
   | { type: 'video'; provider: 'vimeo' | 'youtube' | 'self'; src: string; title: string }
   | { type: 'image'; src: string; alt: string; caption?: string; aspect?: '3/2' | '4/5' | '1/1' }

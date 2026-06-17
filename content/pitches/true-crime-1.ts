@@ -17,7 +17,7 @@ const trueCrime1: Pitch = {
         {
           type: 'pullquote',
           content:
-            "One woman's harrowing journey —\nthrough denial, realization, and grief —\nas she confronts the possibility that the man she loved is a serial killer, and that she may have been closer to it than she ever let herself know.",
+            "One woman's harrowing journey —\nthrough denial, realization, and grief —\nas she confronts the possibility that\nthe man she loved is a serial killer,\nand that she may have been\ncloser to it than she ever let herself know.",
         },
         {
           type: 'gallery',
@@ -51,7 +51,16 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            'Kristin Smith. Joanna Speaks. Charity Lynn Perry. Bridget Leanne Webster. Ashley Real. Close in age. Alike in look. The same type. One after another, they disappeared — and one after another, they were found murdered.',
+            'Kristin Smith. Joanna Speaks. Charity Lynn Perry. Bridget Leanne Webster. Ashley Real.',
+        },
+        {
+          type: 'accent',
+          content: 'Close in age. Alike in look. The same type.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'One after another, they disappeared — and one after another, they were found murdered.',
         },
         {
           type: 'paragraph',
@@ -60,13 +69,25 @@ const trueCrime1: Pitch = {
         },
         {
           type: 'paragraph',
-          content:
-            'It was the names. The vanished women had one thing in common — they led back to the man she lived with. The man who shared her bed, her life, and the raising of her children.',
+          content: 'It was the names.',
+        },
+        {
+          type: 'accent',
+          content: 'The vanished women had one thing in common',
         },
         {
           type: 'paragraph',
           content:
-            "This is her story, told from inside it — recorded across three years, beginning the day Jesse Lee Calhoun was arrested. It is the story of a woman moving through denial, realization, and grief, circling the question she still can't fully answer: how much did she not see — and how much did she choose not to?",
+            'They led back to the man she lived with. The man who shared her bed, her life, and the raising of her children.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            "This is her story, told from inside it — recorded across three years, beginning the day Jesse Lee Calhoun was arrested. It is the story of a woman moving through denial, realization, and grief, circling the question she still can't fully answer:",
+        },
+        {
+          type: 'accent',
+          content: 'how much did she not see — and how much did she choose not to?',
         },
         {
           type: 'paragraph',
