@@ -42,7 +42,7 @@ function Block({ block }: { block: ChapterBlock }) {
       const isPortrait = block.aspect === '4/5' || block.aspect === '1/1'
       return (
         <figure className={`my-10 ${isPortrait ? 'mx-auto max-w-md' : ''}`}>
-          <div className="overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-md ring-1 ring-[var(--p-bright)]/15 transition-all duration-300 hover:shadow-xl hover:ring-[var(--p-bright)]/35">
+          <div className="overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-md ring-1 ring-[var(--p-cool)]/25 transition-all duration-300 hover:shadow-xl hover:ring-[var(--p-cool)]/50">
             <PitchImage
               src={block.src}
               alt={block.alt}

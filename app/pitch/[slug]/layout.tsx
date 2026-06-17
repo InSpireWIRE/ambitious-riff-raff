@@ -9,8 +9,9 @@ const pitchTheme = {
   '--p-panel': '#1E2438', // cards, sidebar, players
   '--p-cream': '#F4F1EA', // primary text
   '--p-haze': '#8C93AC', // muted text / borders
-  '--p-bright': '#FAF7F2', // accent / highlight
-  '--accent': '#FAF7F2', // override the site's terracotta focus ring inside the deck
+  '--p-bright': '#C8A57C', // warm tan — editorial/type accent (eyebrows, labels, quote mark, stats)
+  '--p-cool': '#6E89A8', // slate blue — imagery accent (photo/card frame rings)
+  '--accent': '#C8A57C', // focus ring inside the deck, matched to the warm accent
 } as CSSProperties
 
 export default function PitchLayout({

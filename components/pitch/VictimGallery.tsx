@@ -40,7 +40,7 @@ export default function VictimGallery({ victims }: VictimGalleryProps) {
             key={victim.name}
             type="button"
             onClick={() => setActive(i)}
-            className="group flex flex-col overflow-hidden rounded-2xl bg-[var(--p-panel)] text-left shadow-md ring-1 ring-[var(--p-bright)]/15 transition-all hover:shadow-xl hover:ring-[var(--p-bright)]/35 focus-visible:shadow-xl"
+            className="group flex flex-col overflow-hidden rounded-2xl bg-[var(--p-panel)] text-left shadow-md ring-1 ring-[var(--p-cool)]/25 transition-all hover:shadow-xl hover:ring-[var(--p-cool)]/50 focus-visible:shadow-xl"
           >
             <PitchImage
               src={victim.photo}

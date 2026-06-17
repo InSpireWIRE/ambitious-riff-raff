@@ -40,7 +40,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             key={image.src}
             type="button"
             onClick={() => setActive(i)}
-            className="group overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-md ring-1 ring-[var(--p-bright)]/15 transition-all hover:shadow-xl hover:ring-[var(--p-bright)]/35 focus-visible:shadow-xl"
+            className="group overflow-hidden rounded-2xl bg-[var(--p-cream)]/5 shadow-md ring-1 ring-[var(--p-cool)]/25 transition-all hover:shadow-xl hover:ring-[var(--p-cool)]/50 focus-visible:shadow-xl"
           >
             <PitchImage
               src={image.src}
