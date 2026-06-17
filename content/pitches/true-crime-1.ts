@@ -17,7 +17,7 @@ const trueCrime1: Pitch = {
         {
           type: 'pullquote',
           content:
-            'One sentence. The hook that makes a network lean in. [Placeholder — replace with the actual logline.]',
+            'What happens when love, addiction, and denial keep you from seeing the truth — and the truth is five women are dead?',
         },
       ],
     },
