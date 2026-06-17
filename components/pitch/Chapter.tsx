@@ -123,7 +123,7 @@ export default function Chapter({ chapter }: { chapter: ChapterType }) {
         <span aria-hidden className="h-px w-8 bg-[var(--p-bright)]/50" />
         Chapter {chapter.number}
       </p>
-      <h2 className="font-[family-name:var(--font-fraunces)] text-3xl font-semibold leading-tight tracking-tight text-[var(--p-cream)] md:text-4xl">
+      <h2 className="font-[family-name:var(--font-fraunces)] text-xl font-medium leading-tight tracking-tight text-[var(--p-cream)] md:text-2xl">
         {chapter.title}
       </h2>
       <div className="mt-8">{renderBlocks(chapter.blocks)}</div>

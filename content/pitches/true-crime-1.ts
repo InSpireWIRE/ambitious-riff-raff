@@ -130,15 +130,51 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            'Placeholder. The cultural moment: the news peg, the anniversary, the court date, the reopened file — whatever makes this land in 2026 rather than five years ago or five years from now.',
+            "This isn't a cold case waiting to be revived. It's a live story building toward its peak.",
         },
         {
           type: 'paragraph',
           content:
-            'Placeholder. The audience appetite: why this specific story fits where true crime is heading, and the white space it occupies that the current hits do not.',
+            'The case has reached the national press in escalating waves — and the headlines themselves tell the story of a body count that keeps climbing:',
         },
-        { type: 'stat', value: '12M', label: 'True crime listeners in the US' },
-        { type: 'stat', value: '73%', label: 'Female audience skew' },
+        {
+          type: 'list',
+          items: [
+            'The New York Times — Oregon Man Accused of Killing 3 Women Is Now Charged With Murdering a Fourth',
+            'NBC News — Oregon man accused of killing 3 women and dumping bodies is indicted on fourth murder charge',
+            'People — Suspected Serial Killer Already Accused of Murdering 4 Women Is Charged with a Fifth Death',
+            'The Associated Press — Man accused of killing women in Portland area arraigned on a 5th second-degree murder charge',
+            'USA Today — Murder charges stack up against accused serial killer',
+            'NewsNation — Suspected serial killer Jesse Lee Calhoun tied to 5th victim',
+            'CBS News — Deaths of 4 women found in Oregon linked and person of interest identified, authorities say',
+            "Fox News — Portland murder suspect hit with fourth homicide charge as victims' families demand justice",
+          ],
+        },
+        {
+          type: 'paragraph',
+          content:
+            'Three victims became four. Four became five. Investigators have signaled the count may not be final. Each indictment has pulled the story back into the national conversation — bigger every time.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'And the trajectory runs straight toward a 2027 trial: a built-in news engine that will return this case to the front page on a schedule, with the audience larger at every turn.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'Every one of these outlets covered the case — the charges, the courtroom, the victims. Not one of them has the story behind the story, and not one of them can get it. No one else was inside the home, inside the relationship, recording in real time as the woman who loved Jesse Lee Calhoun moved from denial to realization to grief.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'That is the exclusive. And it arrives in the one window when national attention is guaranteed to be at its highest — the run-up to trial.',
+        },
+        {
+          type: 'pullquote',
+          content:
+            'Release into the 2027 proceedings, and the show rides a news cycle it never has to manufacture.',
+        },
       ],
     },
     {

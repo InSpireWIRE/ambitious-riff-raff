@@ -39,10 +39,10 @@ export default async function PitchPage({
             <p className="text-xs font-medium uppercase tracking-[0.3em] text-[var(--p-bright)]">
               {pitch.subtitle}
             </p>
-            <h1 className="mt-5 font-[family-name:var(--font-fraunces)] text-[2.75rem] font-semibold leading-[1.0] tracking-tight text-[var(--p-cream)] md:text-[4.25rem]">
+            <h1 className="mt-4 font-[family-name:var(--font-fraunces)] text-xl font-medium leading-tight tracking-tight text-[var(--p-cream)]/90 md:text-2xl">
               {pitch.title}
             </h1>
-            <p className="mt-7 max-w-lg text-lg font-light leading-relaxed text-[var(--p-cream)]/85 md:text-xl">
+            <p className="mt-6 max-w-2xl font-[family-name:var(--font-fraunces)] text-[1.6rem] font-normal leading-[1.2] text-[var(--p-cream)] md:text-[2.25rem]">
               {pitch.logline}
             </p>
           </header>
