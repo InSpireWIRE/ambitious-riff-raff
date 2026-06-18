@@ -277,10 +277,19 @@ const trueCrime1: Pitch = {
       title: 'Voice & Host',
       blocks: [
         {
-          type: 'image',
-          src: '/pitch/true-crime-1/host.jpg',
-          alt: 'Placeholder — host portrait',
-          caption: 'Placeholder — host portrait.',
+          type: 'paragraph',
+          content:
+            "The host(s) issue is TBD. We are interested to explore partnerships with established hosts with established distribution. Krista's voice is the engine; the host(s) represent a thin, load-bearing layer that does only what Krista's POV structurally can't. Not strict-purist first-person, not a conventional hosted true-crime format with Krista as a character in it. Her first-person archive is the spine; the host is scaffolding with a defined, narrow job.",
+        },
+        {
+          type: 'paragraph',
+          content:
+            'The host or hosts do three things: (1) delivers set up and context and the verified record — warrants, charges, timeline — in a trustworthy register that the audience reads as true, separate from Krista\'s evolving belief; (2) carries the victims, so the "Who Was ___?" personhood comes from a voice with no stake in Krista\'s innocence-or-guilt arc; (3) places the minimum context needed so the audience isn\'t lost. The host never interprets Krista, never tells you how to feel about her, never gets ahead of her realization — because the dramatic irony (the gap between what she believes in a given month and what the record shows) only works if the host states the record flatly and lets the audience hold both.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'Because we can record new reflective Krista (the three-years-later, fog-lifted voice), her own retrospective narration can carry the connective tissue between scenes — which shrinks the host further, toward pure record-and-victims duty. Two Krista timelines (living-it and looking-back) do the emotional and narrative work.',
         },
       ],
     },
