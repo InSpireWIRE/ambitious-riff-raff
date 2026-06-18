@@ -11,37 +11,19 @@ const trueCrime1: Pitch = {
   chapters: [
     {
       id: 'logline',
-      number: '01',
       title: 'Logline',
       blocks: [
         {
-          type: 'pullquote',
+          type: 'statement',
           content:
-            "One woman's harrowing journey —\nthrough denial, realization, and grief —\nas she confronts the possibility that\nthe man she loved is a serial killer,\nand that she may have been\ncloser to it than she ever let herself know.",
-        },
-        {
-          type: 'gallery',
-          images: [
-            {
-              src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Lake.jpg',
-              alt: 'Krista and Jesse at the beach',
-            },
-            {
-              src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Love.jpg',
-              alt: 'Krista and Jesse at home',
-            },
-            {
-              src: '/pitch/true-crime-1/Jesse_Krista_Bed_No_Shirt_.jpg',
-              alt: 'Krista and Jesse',
-            },
-          ],
+            "One woman's harrowing journey —\nthrough denial, realization, and grief —\nas she confronts the possibility that\nthe man she loved is a serial killer,\nand that she may have been\ncloser to death than she ever let herself know.",
         },
       ],
     },
     {
       id: 'the-story',
-      number: '02',
       title: 'The Story',
+      prose: 'feature',
       blocks: [
         {
           type: 'paragraph',
@@ -54,7 +36,7 @@ const trueCrime1: Pitch = {
             'Kristin Smith. Joanna Speaks. Charity Lynn Perry. Bridget Leanne Webster. Ashley Real.',
         },
         {
-          type: 'accent',
+          type: 'beat',
           content: 'Close in age. Alike in look. The same type.',
         },
         {
@@ -72,33 +54,53 @@ const trueCrime1: Pitch = {
           content: 'It was the names.',
         },
         {
-          type: 'accent',
-          content: 'The vanished women had one thing in common',
+          type: 'beat',
+          content: 'The vanished women\nhad one thing in common.',
         },
         {
           type: 'paragraph',
           content:
-            'They led back to the man she lived with. The man who shared her bed, her life, and the raising of her children.',
+            'They led back to the man she lived with — the man who shared her bed, her life, and the raising of her children.',
+        },
+        {
+          type: 'beat',
+          content:
+            'This is her story, told from inside it: recorded across three years, beginning the day Jesse Lee Calhoun was arrested.',
         },
         {
           type: 'paragraph',
           content:
-            "This is her story, told from inside it — recorded across three years, beginning the day Jesse Lee Calhoun was arrested. It is the story of a woman moving through denial, realization, and grief, circling the question she still can't fully answer:",
-        },
-        {
-          type: 'accent',
-          content: 'how much did she not see —\nand how much did she choose not to?',
+            'Across those years, the recordings capture every stage of her reckoning — the flat denial, the shock when denial cracked, the embarrassment of being the last to see it, and the slow, hard arrival at acceptance.',
         },
         {
           type: 'paragraph',
           content:
-            'Five women are dead. Calhoun stands indicted for all five murders. And the woman who loved him is left to live with what she knew, when she knew it, and what it cost her not to ask.',
+            "And buried in that arrival is the most unbearable turn of all. The obsessive check-ins — the calls and texts asking where Jesse was, the jealousy she's now ashamed of — were never just jealousy. Those same messages, she came to realize, traced his movements: times, dates, places.",
+        },
+        {
+          type: 'beat',
+          content:
+            'The record of a girlfriend keeping tabs\nbecame a map\nlaid over the disappearances.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            "The thing she's most embarrassed by may be the thing that mattered most.",
+        },
+        {
+          type: 'paragraph',
+          content:
+            "She circles the question she still can't fully answer: how much did she not see — and how much did she choose not to?",
+        },
+        {
+          type: 'paragraph',
+          content:
+            'Five women are dead. Calhoun stands indicted for all five murders. And the woman who loved him is left to live with what she knew, when she knew it, what it cost her not to ask — and the strange, complicated pride that, in the end, her not-letting-go is part of what helped.',
         },
       ],
     },
     {
       id: 'victims',
-      number: '03',
       title: 'Victims',
       blocks: [
         {
@@ -145,15 +147,16 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'why-now',
-      number: '04',
       title: 'Why Now',
+      backgroundImage: '/pitch/true-crime-1/download.png',
+      prose: 'feature',
       blocks: [
         {
           type: 'paragraph',
           content: "This isn't a cold case waiting to be revived.",
         },
         {
-          type: 'accent',
+          type: 'beat',
           content: "It's a live story building toward its peak.",
         },
         {
@@ -163,6 +166,7 @@ const trueCrime1: Pitch = {
         },
         {
           type: 'list',
+          boldLead: true,
           items: [
             'The New York Times — Oregon Man Accused of Killing 3 Women Is Now Charged With Murdering a Fourth',
             'NBC News — Oregon man accused of killing 3 women and dumping bodies is indicted on fourth murder charge',
@@ -175,8 +179,9 @@ const trueCrime1: Pitch = {
           ],
         },
         {
-          type: 'accent',
-          content: 'Three victims became four. Four became five.',
+          type: 'beat',
+          content:
+            'Two victims became three. Three victims became four.\nFour became five. Five victims…?',
         },
         {
           type: 'paragraph',
@@ -204,7 +209,7 @@ const trueCrime1: Pitch = {
             'That is the exclusive. And it arrives in the one window when national attention is guaranteed to be at its highest — the run-up to trial.',
         },
         {
-          type: 'pullquote',
+          type: 'beat',
           content:
             'Release into the 2027 proceedings, and the show rides a news cycle it never has to manufacture.',
         },
@@ -212,43 +217,46 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'listen',
-      number: '05',
       title: 'Listen',
       blocks: [
         {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/voices.mp3',
           title: 'Voices',
-          description: '[Add a short description of this clip.]',
+          description:
+            'A mix of Portland investigators, Jesse\'s girlfriend Krista making a shocking statement about a video of Jesse, Jesse\'s voice from a sex tape he made where he says he gets off "on the pain I inflict," a mysterious woman named Shannon—who claims to have seen a rope in Jesse\'s car that may have been connected to the murders, and Jesse speaking from behind prison walls.',
+        },
+        {
+          type: 'audio',
+          src: '/pitch/true-crime-1/audio/jesse-corpse.mp3',
+          title: 'Did Jesse Have Sex with a Corpse?',
+          description:
+            'After being grilled by Detective Lindsay—aka "The Krista Whisperer"—Krista calls the producer and reveals a horrifying detail about Jesse\'s sexual proclivities, along with a chilling story about an offhand remark he once made that she has never been able to forget.',
         },
         {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/jesse-prove-something.mp3',
           title: 'Was Jesse Trying To Prove Something?',
-          description: '[Add a short description of this clip.]',
+          description:
+            "In the aftermath of Jesse's indictment for the murders of Joanna Speaks and Charity Perry, Krista reexamines the relationship through a new lens. Looking back on Jesse's unconventional sexual interests and repeated infidelities, she struggles to understand the motivations behind his behavior and whether she overlooked warning signs along the way.",
         },
         {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/cops-visit-krista.mp3',
           title: 'Cops Visit Krista to Connect Joanna to Jesse on the Day She Died',
-          description: '[Add a short description of this clip.]',
-        },
-        {
-          type: 'paragraph',
-          content:
-            'Placeholder. Describe the sound: the pace, the silence, the texture. How the mix makes a listener feel like they are in the room, and how the music carries the dread without tipping into pastiche.',
+          description:
+            'Reeling from shock, confusion, and disbelief after investigators present evidence placing Jesse with Joanna Speaks on the day she disappeared, Krista calls the producer struggling to reconcile the man she thought she knew with the mounting evidence against him.',
         },
       ],
     },
     {
       id: 'format-episodes',
-      number: '06',
       title: 'Format & Episodes',
       blocks: [
         {
           type: 'paragraph',
           content:
-            'Placeholder. The shape of the series: a six-part limited run, serialized and built to binge, with a structure that withholds and pays off. Note any recurring segments or the spine that holds the arc together.',
+            'Placeholder.',
         },
         {
           type: 'list',
@@ -266,14 +274,8 @@ const trueCrime1: Pitch = {
     },
     {
       id: 'voice-host',
-      number: '07',
       title: 'Voice & Host',
       blocks: [
-        {
-          type: 'paragraph',
-          content:
-            'Placeholder. Who the host is and why only they can tell this story — the access they hold, the credibility they bring, the relationship they have to the material.',
-        },
         {
           type: 'image',
           src: '/pitch/true-crime-1/host.jpg',
@@ -286,99 +288,81 @@ const trueCrime1: Pitch = {
           title: 'Host introduces themselves',
           description: 'Placeholder — the host in their own words.',
         },
+      ],
+    },
+    {
+      id: 'gallery',
+      title: 'Gallery',
+      blocks: [
         {
-          type: 'pullquote',
-          content:
-            'A one-line host bio that tells a network exactly who is steering this. [Placeholder.]',
-          attribution: 'Host name, credential',
+          type: 'gallery',
+          images: [
+            {
+              src: '/pitch/true-crime-1/Jesse.Krista.STABBING.Me.In.Back.jpg',
+              alt: "Krista's drawing — stabbing me in the back",
+            },
+            {
+              src: '/pitch/true-crime-1/Jesse_SunGlasses.jpg',
+              alt: 'Jesse Lee Calhoun',
+            },
+            {
+              src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Lake.jpg',
+              alt: 'Krista and Jesse at the lake',
+            },
+            {
+              src: '/pitch/true-crime-1/Krista%20and%20Jesse%20Love.jpg',
+              alt: 'Krista and Jesse',
+            },
+            {
+              src: '/pitch/true-crime-1/Jesse_Krista_Love_Pic.jpg',
+              alt: 'Krista and Jesse',
+            },
+            {
+              src: '/pitch/true-crime-1/Jesse_Krista_We_R_A_Team_.jpg',
+              alt: 'Krista and Jesse — we are a team',
+            },
+            {
+              src: '/pitch/true-crime-1/Jesse_Krista_Bed_No_Shirt_.jpg',
+              alt: 'Krista and Jesse',
+            },
+            {
+              src: '/pitch/true-crime-1/IMG_20220515_150312902~2.jpg',
+              alt: 'Krista and Jesse',
+            },
+          ],
         },
       ],
     },
     {
       id: 'access-sources',
-      number: '08',
       title: 'Access & Sources',
       blocks: [
         {
           type: 'paragraph',
           content:
-            'Placeholder. What is exclusive here — the doors that are open to us and closed to everyone else. Make the moat obvious.',
-        },
-        {
-          type: 'list',
-          items: [
-            'Lead detective on the original case',
-            'Family of the victim',
-            'Court documents under seal until 2026',
-          ],
-        },
-      ],
-    },
-    {
-      id: 'comps',
-      number: '09',
-      title: 'Comps',
-      blocks: [
-        {
-          type: 'paragraph',
-          content:
-            'Placeholder. The comps that frame the opportunity — the shows a buyer already trusts and the audiences they proved.',
-        },
-        {
-          type: 'gallery',
-          images: [
-            { src: '/pitch/true-crime-1/comp-1.jpg', alt: 'Placeholder — comp show cover art 1' },
-            { src: '/pitch/true-crime-1/comp-2.jpg', alt: 'Placeholder — comp show cover art 2' },
-            { src: '/pitch/true-crime-1/comp-3.jpg', alt: 'Placeholder — comp show cover art 3' },
-          ],
-        },
-        {
-          type: 'paragraph',
-          content:
-            'Placeholder. ...but ours is different because — the single sentence that separates this from every comp above.',
+            'Exclusive access to Krista Sinor and others who inhabit the world Krista and Jesse shared as well as audio, video, photos, and documents of import.',
         },
       ],
     },
     {
       id: 'team',
-      number: '10',
       title: 'Team',
       blocks: [
         {
           type: 'list',
-          items: [
-            'Executive Producer — Placeholder Name',
-            'Showrunner — Placeholder Name',
-            'Producer — Placeholder Name',
-          ],
+          items: ['Executive Producer — Craig Bland / Ambitious Riff Raff'],
         },
         {
           type: 'paragraph',
-          content: 'In partnership with [Placeholder partner / production company].',
-        },
-      ],
-    },
-    {
-      id: 'the-ask',
-      number: '11',
-      title: 'The Ask',
-      blocks: [
-        {
-          type: 'paragraph',
           content:
-            'Placeholder. The ask, stated plainly: development funding / distribution / a talent attachment / a production deal. Say exactly what a yes looks like and what it unlocks.',
-        },
-        {
-          type: 'pullquote',
-          content:
-            'A closing line that makes them want to be part of it. [Placeholder.]',
+            'Representation Creative Arts Management, Inc.\nFabian — fabian@creativeartsmgmt.com\n310.500.5659',
         },
       ],
     },
   ],
   footer: {
-    contact: 'craig@inspirewire.me',
-    representation: 'Representation — Placeholder Agency / Agent',
+    representation:
+      'Representation — Creative Arts Management, Inc. · Fabian — fabian@creativeartsmgmt.com · 310.500.5659',
   },
 }
 

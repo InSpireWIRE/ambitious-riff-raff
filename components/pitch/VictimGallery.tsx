@@ -34,7 +34,8 @@ export default function VictimGallery({ victims }: VictimGalleryProps) {
 
   return (
     <>
-      <div className="my-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <p className="mt-4 text-sm italic text-[var(--p-haze)]">(click photos for details)</p>
+      <div className="mt-6 mb-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {victims.map((victim, i) => (
           <button
             key={victim.name}

@@ -24,11 +24,14 @@ export default async function PitchPage({
     return <Gate slug={slug} title={pitch.title} />
   }
 
+  // Chapters are numbered by position, so reordering content never desyncs
+  // the labels (title is 00, chapters start at 01).
+  const chapterNumber = (i: number) => String(i + 1).padStart(2, '0')
   const navItems = [
     { id: 'title', number: '00', title: 'Title' },
-    ...pitch.chapters.map((c) => ({
+    ...pitch.chapters.map((c, i) => ({
       id: c.id,
-      number: c.number,
+      number: chapterNumber(i),
       title: c.title,
     })),
   ]
@@ -54,14 +57,16 @@ export default async function PitchPage({
             </p>
           </section>
 
-          {pitch.chapters.map((chapter) => (
-            <Chapter key={chapter.id} chapter={chapter} />
+          {pitch.chapters.map((chapter, i) => (
+            <Chapter key={chapter.id} chapter={chapter} number={chapterNumber(i)} />
           ))}
 
           {pitch.footer && (
             <footer className="border-t border-[var(--p-haze)]/15 py-16 text-sm text-[var(--p-haze)]">
-              <p className="text-[var(--p-cream)]">{pitch.footer.contact}</p>
-              <p className="mt-1">{pitch.footer.representation}</p>
+              {pitch.footer.contact && (
+                <p className="text-[var(--p-cream)]">{pitch.footer.contact}</p>
+              )}
+              <p className={pitch.footer.contact ? 'mt-1' : undefined}>{pitch.footer.representation}</p>
             </footer>
           )}
         </div>

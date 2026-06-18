@@ -16,10 +16,12 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     if (active === null) return
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setActive(null)
+      else if (e.key === 'ArrowRight') setActive((i) => (i === null ? i : (i + 1) % images.length))
+      else if (e.key === 'ArrowLeft') setActive((i) => (i === null ? i : (i - 1 + images.length) % images.length))
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [active])
+  }, [active, images.length])
 
   const open = active !== null ? images[active] : null
 
@@ -69,6 +71,36 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               <path d="M6 6l12 12M18 6 6 18" />
             </svg>
           </button>
+          {images.length > 1 && (
+            <>
+              <button
+                type="button"
+                aria-label="Previous"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setActive((i) => (i === null ? i : (i - 1 + images.length) % images.length))
+                }}
+                className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-[var(--p-cream)]/90 text-[var(--p-ink)] transition-opacity hover:opacity-80 md:left-6"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                aria-label="Next"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setActive((i) => (i === null ? i : (i + 1) % images.length))
+                }}
+                className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-[var(--p-cream)]/90 text-[var(--p-ink)] transition-opacity hover:opacity-80 md:right-6"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </>
+          )}
           <div onClick={(e) => e.stopPropagation()}>
             <PitchImage
               src={open.src}
@@ -78,6 +110,11 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           </div>
           {open.caption && (
             <p className="mt-4 text-center text-sm text-[var(--p-cream)]/80">{open.caption}</p>
+          )}
+          {images.length > 1 && (
+            <p className="mt-3 text-center text-xs tabular-nums tracking-widest text-[var(--p-haze)]">
+              {(active ?? 0) + 1} / {images.length}
+            </p>
           )}
         </div>
       )}

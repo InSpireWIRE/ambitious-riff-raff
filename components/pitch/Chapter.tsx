@@ -6,11 +6,15 @@ import PullQuote from './PullQuote'
 import VictimGallery from './VictimGallery'
 import VideoEmbed from './VideoEmbed'
 
-function Block({ block }: { block: ChapterBlock }) {
+function Block({ block, feature }: { block: ChapterBlock; feature?: boolean }) {
   switch (block.type) {
     case 'paragraph':
-      return (
-        <p className="my-6 text-lg leading-relaxed text-[var(--p-cream)]/85">{block.content}</p>
+      return feature ? (
+        <p className="my-7 font-[family-name:var(--font-fraunces)] text-[1.3rem] font-normal leading-[1.5] text-[var(--p-cream)]/90 md:my-8 md:text-[1.8rem] md:leading-[1.4]">
+          {block.content}
+        </p>
+      ) : (
+        <p className="my-6 whitespace-pre-line text-lg leading-relaxed text-[var(--p-cream)]/85">{block.content}</p>
       )
 
     case 'pullquote':
@@ -58,7 +62,29 @@ function Block({ block }: { block: ChapterBlock }) {
 
     case 'accent':
       return (
-        <p className="my-10 whitespace-pre-line text-center font-[family-name:var(--font-fraunces)] text-xl italic leading-snug text-[var(--p-cream)] md:text-2xl">
+        <p
+          className={`my-10 whitespace-pre-line text-center font-[family-name:var(--font-fraunces)] italic leading-snug text-[var(--p-cream)] ${
+            feature ? 'text-2xl md:text-[2.1rem]' : 'text-xl md:text-2xl'
+          }`}
+        >
+          {block.content}
+        </p>
+      )
+
+    case 'statement':
+      // Mirrors the title logline's typography (see app/pitch/[slug]/page.tsx):
+      // large, flush-left, non-italic Fraunces.
+      return (
+        <p className="my-10 max-w-2xl whitespace-pre-line font-[family-name:var(--font-fraunces)] text-[1.7rem] font-normal leading-[1.3] text-[var(--p-cream)] md:my-14 md:text-[2.5rem] md:leading-[1.22]">
+          {block.content}
+        </p>
+      )
+
+    case 'beat':
+      // Centered tan emphasis line. Fixed size (independent of `feature`) so
+      // every beat in a chapter reads at the same scale.
+      return (
+        <p className="my-10 whitespace-pre-line text-center font-[family-name:var(--font-fraunces)] text-2xl italic leading-snug text-[var(--p-bright)] md:text-[2.1rem]">
           {block.content}
         </p>
       )
@@ -72,12 +98,37 @@ function Block({ block }: { block: ChapterBlock }) {
     case 'list':
       return (
         <ul className="my-6 space-y-3">
-          {block.items.map((item, i) => (
-            <li key={i} className="flex gap-3 text-lg leading-relaxed text-[var(--p-cream)]/85">
-              <span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--p-bright)]" />
-              <span>{item}</span>
-            </li>
-          ))}
+          {block.items.map((item, i) => {
+            // For "OUTLET — headline" lists, bold + uppercase the lead.
+            const dashAt = block.boldLead ? item.indexOf(' — ') : -1
+            return (
+              <li
+                key={i}
+                className={`flex gap-3 leading-relaxed text-[var(--p-cream)]/85 ${
+                  feature ? 'text-[1.2rem] md:text-[1.55rem]' : 'text-lg'
+                }`}
+              >
+                <span
+                  aria-hidden
+                  className={`shrink-0 rounded-full bg-[var(--p-bright)] ${
+                    feature ? 'mt-3 h-2 w-2' : 'mt-2.5 h-1.5 w-1.5'
+                  }`}
+                />
+                <span>
+                  {dashAt >= 0 ? (
+                    <>
+                      <span className="font-bold uppercase tracking-wide text-[var(--p-cream)]">
+                        {item.slice(0, dashAt)}
+                      </span>
+                      {item.slice(dashAt)}
+                    </>
+                  ) : (
+                    item
+                  )}
+                </span>
+              </li>
+            )
+          })}
         </ul>
       )
 
@@ -95,7 +146,7 @@ function Block({ block }: { block: ChapterBlock }) {
 }
 
 // Group consecutive stat blocks so they sit side-by-side.
-function renderBlocks(blocks: ChapterBlock[]) {
+function renderBlocks(blocks: ChapterBlock[], feature?: boolean) {
   const out: React.ReactNode[] = []
   let i = 0
   while (i < blocks.length) {
@@ -108,32 +159,42 @@ function renderBlocks(blocks: ChapterBlock[]) {
       out.push(
         <div key={`stats-${i}`} className="my-6 flex flex-wrap gap-4">
           {group.map((b, j) => (
-            <Block key={j} block={b} />
+            <Block key={j} block={b} feature={feature} />
           ))}
         </div>
       )
     } else {
-      out.push(<Block key={i} block={blocks[i]} />)
+      out.push(<Block key={i} block={blocks[i]} feature={feature} />)
       i++
     }
   }
   return out
 }
 
-export default function Chapter({ chapter }: { chapter: ChapterType }) {
+export default function Chapter({ chapter, number }: { chapter: ChapterType; number: string }) {
   return (
     <section
       id={chapter.id}
-      className="relative isolate scroll-mt-24 border-b border-[var(--p-haze)]/10 py-20 first:pt-12 last:border-b-0 md:py-32"
+      className="relative isolate scroll-mt-16 border-b border-[var(--p-haze)]/10 pb-20 pt-10 first:pt-12 last:border-b-0 md:scroll-mt-10 md:pb-32 md:pt-12"
     >
+      {chapter.backgroundImage && (
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-[0.10]"
+            style={{ backgroundImage: `url(${chapter.backgroundImage})` }}
+          />
+          {/* Tint the wallpaper toward the deck's ink and fade its edges so text stays legible. */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--p-ink)] via-[var(--p-ink)]/60 to-[var(--p-ink)]" />
+        </div>
+      )}
       <p className="mb-3 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-bright)]">
         <span aria-hidden className="h-px w-8 bg-[var(--p-bright)]/50" />
-        Chapter {chapter.number}
+        Chapter {number}
       </p>
       <h2 className="font-[family-name:var(--font-fraunces)] text-xl font-medium leading-tight tracking-tight text-[var(--p-cream)] md:text-2xl">
         {chapter.title}
       </h2>
-      <div className="mt-8">{renderBlocks(chapter.blocks)}</div>
+      <div className="mt-8">{renderBlocks(chapter.blocks, chapter.prose === 'feature')}</div>
     </section>
   )
 }
