@@ -282,12 +282,6 @@ const trueCrime1: Pitch = {
           alt: 'Placeholder — host portrait',
           caption: 'Placeholder — host portrait.',
         },
-        {
-          type: 'audio',
-          src: '/pitch/true-crime-1/audio/host-intro.mp3',
-          title: 'Host introduces themselves',
-          description: 'Placeholder — the host in their own words.',
-        },
       ],
     },
     {
