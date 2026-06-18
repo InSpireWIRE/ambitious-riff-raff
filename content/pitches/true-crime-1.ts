@@ -219,16 +219,19 @@ const trueCrime1: Pitch = {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/voices.mp3',
           title: 'Voices',
+          description: '[Add a short description of this clip.]',
         },
         {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/jesse-prove-something.mp3',
           title: 'Was Jesse Trying To Prove Something?',
+          description: '[Add a short description of this clip.]',
         },
         {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/cops-visit-krista.mp3',
           title: 'Cops Visit Krista to Connect Joanna to Jesse on the Day She Died',
+          description: '[Add a short description of this clip.]',
         },
         {
           type: 'paragraph',

@@ -42,7 +42,8 @@ export default function AudioPlayer({ src, title, description }: AudioPlayerProp
   const progress = duration > 0 ? (current / duration) * 100 : 0
 
   return (
-    <div className="my-8 rounded-2xl border border-[var(--p-haze)]/15 bg-[var(--p-panel)] p-5 shadow-sm">
+    <div className="my-8">
+      <div className="rounded-2xl border border-[var(--p-haze)]/15 bg-[var(--p-panel)] p-5 shadow-sm">
       <div className="flex items-center gap-4">
         <button
           type="button"
@@ -64,9 +65,6 @@ export default function AudioPlayer({ src, title, description }: AudioPlayerProp
 
         <div className="min-w-0 flex-1">
           <p className="truncate font-[family-name:var(--font-fraunces)] text-lg text-[var(--p-cream)]">{title}</p>
-          {description && (
-            <p className="truncate text-sm text-[var(--p-haze)]">{description}</p>
-          )}
 
           <div className="mt-3 flex items-center gap-3">
             <input
@@ -99,6 +97,13 @@ export default function AudioPlayer({ src, title, description }: AudioPlayerProp
         onTimeUpdate={(e) => setCurrent(e.currentTarget.currentTime)}
         onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
       />
+      </div>
+
+      {description && (
+        <p className="mt-3 px-1 text-[15px] leading-relaxed text-[var(--p-cream)]/75">
+          {description}
+        </p>
+      )}
     </div>
   )
 }
