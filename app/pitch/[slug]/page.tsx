@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getPitch } from '@/content/pitches'
 import { cookieName, verifyToken } from '@/lib/pitch-auth'
 import Chapter from '@/components/pitch/Chapter'
+import PitchTitle from '@/components/pitch/PitchTitle'
 import Sidebar from '@/components/pitch/Sidebar'
 import StaggeredLines from '@/components/pitch/StaggeredLines'
 import Gate from './gate'
@@ -50,7 +51,7 @@ export default async function PitchPage({
               {pitch.subtitle}
             </p>
             <h1 className="mt-4 font-[family-name:var(--font-fraunces)] text-xl font-medium leading-tight tracking-tight text-[var(--p-cream)]/90 md:text-2xl">
-              {pitch.title}
+              <PitchTitle title={pitch.title} />
             </h1>
             <p className="mt-8 max-w-2xl whitespace-pre-line font-[family-name:var(--font-fraunces)] text-[1.7rem] font-normal leading-[1.3] text-[var(--p-cream)] md:text-[2.5rem] md:leading-[1.22]">
               {pitch.logline}

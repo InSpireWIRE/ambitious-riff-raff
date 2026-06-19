@@ -3,17 +3,13 @@
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import AR2Mark from '@/components/AR2Mark'
+import PitchTitle from '@/components/pitch/PitchTitle'
 
 export default function Gate({ slug, title }: { slug: string; title: string }) {
   const router = useRouter()
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-
-  // Show the first word on its own line, the rest below
-  // ("Untitled" / "True Crime Podcast").
-  const [titleHead, ...titleRestParts] = title.split(' ')
-  const titleRest = titleRestParts.join(' ')
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -55,13 +51,7 @@ export default function Gate({ slug, title }: { slug: string; title: string }) {
             Pitch access
           </p>
           <h1 className="mt-2 font-[family-name:var(--font-fraunces)] text-2xl leading-tight text-[var(--p-cream)]">
-            {titleHead}
-            {titleRest && (
-              <>
-                <br />
-                {titleRest}
-              </>
-            )}
+            <PitchTitle title={title} />
           </h1>
         </div>
 

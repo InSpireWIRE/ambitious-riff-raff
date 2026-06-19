@@ -3,7 +3,7 @@ import type { Pitch } from './types'
 // PLACEHOLDER CONTENT — Craig will replace copy, media, and stats with the real pitch.
 const trueCrime1: Pitch = {
   slug: 'true-crime-1',
-  title: 'Untitled True Crime Podcast',
+  title: 'True Crime Podcast (untitled)',
   subtitle: 'A limited-series true crime podcast',
   logline:
     'What happens when love, addiction, and denial blind you to the truth —\nand the truth is\nfive women are dead…',
@@ -256,20 +256,30 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            'Placeholder.',
+            "Krista's voice is the engine; the host(s) represent a thin, load-bearing layer that does only what Krista's POV structurally can't. Not strict-purist first-person, not a conventional hosted true-crime format with Krista as a character in it. Her first-person archive is the spine; the host is scaffolding with a defined, narrow job.",
+        },
+        {
+          type: 'paragraph',
+          content:
+            'The host or hosts do three things: (1) delivers set up and context and the verified record — warrants, charges, timeline — in a trustworthy register that the audience reads as true, separate from Krista\'s evolving belief; (2) carries the victims, so the "Who Was ___?" personhood comes from a voice with no stake in Krista\'s innocence-or-guilt arc; (3) places the minimum context needed so the audience isn\'t lost. The host never interprets Krista, never tells you how to feel about her, never gets ahead of her realization — because the dramatic irony (the gap between what she believes in a given month and what the record shows) only works if the host states the record flatly and lets the audience hold both.',
+        },
+        {
+          type: 'paragraph',
+          content:
+            'Because we can record new reflective Krista (the three-years-later, fog-lifted voice), her own retrospective narration can carry the connective tissue between scenes — which shrinks the host further, toward pure record-and-victims duty. Two Krista timelines (living-it and looking-back) do the emotional and narrative work.',
         },
         {
           type: 'list',
           boldLead: true,
           items: [
-            "They Came for Him — A surprise, guns-drawn, multi-car takedown at a gas station detonates Krista's ordinary life. We drop in from inside her POV: the man in her bed, the chaos with no warning. Ends on denial locking into place.",
-            "Not My Jesse — Denial curdles into a need for answers. Still defending him, Krista starts digging on her own — reaching the kinds of people who don't talk to police, working the margins for anything that proves her right. The audience sees what she can't yet: she's building the case against the man she's trying to clear.",
-            "From the Inside — From jail, Jesse keeps his grip: letters, recorded calls, instructions about who to trust and who to avoid. When he tells her he's going to kill himself, the threat lands on her as devotion, not control. We hear his words and her responses — and the audience hears the leash she can't.",
-            "The Names — Fearing he's cheating, she goes looking for another woman — and finds the victims instead. The names that lead back to the man she lives with. Denial cracks.",
-            "Map of the Dead — The unbearable realization: her obsessive check-ins traced his movements and placed him in the windows when the women vanished. The thing she's most ashamed of is the thing that mattered most — and the cops keep coming back to her door.",
-            "He Smelled Like Death — The fear she can't unthink. A remembered night — waking to find him standing over her, the smell that woke her — recast through everything she now knows. Her own memory collides with the charge that started the case: abuse of a corpse.",
-            "The Whole World Knows — The consequences land on her. Evicted from the apartment they shared, named and attacked online, watching the arraignment of the man she loved — Krista becomes a public figure in a story she never chose.",
-            "What I Know — Three years later, looking back: acceptance, and a complicated pride that her not-letting-go is part of what helped. The question left open for the listener — and the trial still ahead.",
+            "Episode One: They Came for Him — A surprise, guns-drawn, multi-car takedown at a gas station detonates Krista's ordinary life. We drop in from inside her POV: the man in her bed, the chaos with no warning. Ends on denial locking into place.",
+            "Episode Two: Not My Jesse — Denial curdles into a need for answers. Still defending him, Krista starts digging on her own — reaching the kinds of people who don't talk to police, working the margins for anything that proves her right. The audience sees what she can't yet: she's building the case against the man she's trying to clear.",
+            "Episode Three: From the Inside — From jail, Jesse keeps his grip: letters, recorded calls, instructions about who to trust and who to avoid. When he tells her he's going to kill himself, the threat lands on her as devotion, not control. We hear his words and her responses — and the audience hears the leash she can't.",
+            "Episode Four: The Names — Fearing he's cheating, she goes looking for another woman — and finds the victims instead. The names that lead back to the man she lives with. Denial cracks.",
+            "Episode Five: Map of the Dead — The unbearable realization: her obsessive check-ins traced his movements and placed him in the windows when the women vanished. The thing she's most ashamed of is the thing that mattered most — and the cops keep coming back to her door.",
+            "Episode Six: He Smelled Like Death — The fear she can't unthink. A remembered night — waking to find him standing over her, the smell that woke her — recast through everything she now knows. Her own memory collides with the charge that started the case: abuse of a corpse.",
+            "Episode Seven: The Whole World Knows — The consequences land on her. Evicted from the apartment they shared, named and attacked online, watching the arraignment of the man she loved — Krista becomes a public figure in a story she never chose.",
+            "Episode Eight: What I Know — Three years later, looking back: acceptance, and a complicated pride that her not-letting-go is part of what helped. The question left open for the listener — and the trial still ahead.",
           ],
         },
         { type: 'stat', value: '8 × 40 min', label: 'Episodes, weekly drop' },
@@ -282,17 +292,7 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            "The host(s) issue is TBD. We are interested to explore partnerships with established hosts with established distribution. Krista's voice is the engine; the host(s) represent a thin, load-bearing layer that does only what Krista's POV structurally can't. Not strict-purist first-person, not a conventional hosted true-crime format with Krista as a character in it. Her first-person archive is the spine; the host is scaffolding with a defined, narrow job.",
-        },
-        {
-          type: 'paragraph',
-          content:
-            'The host or hosts do three things: (1) delivers set up and context and the verified record — warrants, charges, timeline — in a trustworthy register that the audience reads as true, separate from Krista\'s evolving belief; (2) carries the victims, so the "Who Was ___?" personhood comes from a voice with no stake in Krista\'s innocence-or-guilt arc; (3) places the minimum context needed so the audience isn\'t lost. The host never interprets Krista, never tells you how to feel about her, never gets ahead of her realization — because the dramatic irony (the gap between what she believes in a given month and what the record shows) only works if the host states the record flatly and lets the audience hold both.',
-        },
-        {
-          type: 'paragraph',
-          content:
-            'Because we can record new reflective Krista (the three-years-later, fog-lifted voice), her own retrospective narration can carry the connective tissue between scenes — which shrinks the host further, toward pure record-and-victims duty. Two Krista timelines (living-it and looking-back) do the emotional and narrative work.',
+            'The host(s) issue is TBD. We are interested to explore partnerships with established hosts with established distribution.',
         },
       ],
     },

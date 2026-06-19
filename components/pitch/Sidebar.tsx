@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import AR2Mark from '@/components/AR2Mark'
+import PitchTitle from './PitchTitle'
 
 type NavItem = { id: string; number: string; title: string }
 
@@ -86,7 +87,7 @@ export default function Sidebar({ pitchTitle, items }: SidebarProps) {
         <div className="mb-8">
           {backLink}
           <AR2Mark size={48} className="mt-6 opacity-90 invert" />
-          <p className="mt-4 font-[family-name:var(--font-fraunces)] text-xl leading-tight text-[var(--p-cream)]">{pitchTitle}</p>
+          <p className="mt-4 font-[family-name:var(--font-fraunces)] text-xl leading-tight text-[var(--p-cream)]"><PitchTitle title={pitchTitle} /></p>
         </div>
         <div className="-mx-1 flex-1 overflow-y-auto px-1">{navList}</div>
       </aside>
