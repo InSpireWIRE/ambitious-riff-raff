@@ -60,6 +60,9 @@ function Block({ block, feature }: { block: ChapterBlock; feature?: boolean }) {
       )
     }
 
+    case 'note':
+      return <p className="my-4 text-center text-sm italic text-[var(--p-cream)]">{block.content}</p>
+
     case 'accent':
       return (
         <p

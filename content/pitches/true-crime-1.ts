@@ -220,6 +220,10 @@ const trueCrime1: Pitch = {
       title: 'Listen',
       blocks: [
         {
+          type: 'note',
+          content: 'PLEASE NOTE: Audio samples have yet to be cleaned & sweetened.',
+        },
+        {
           type: 'audio',
           src: '/pitch/true-crime-1/audio/cops-visit-krista.mp3',
           title: 'Cops Visit Krista to Connect Joanna to Jesse on the Day She Died',

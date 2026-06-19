@@ -6,6 +6,8 @@ export type ChapterBlock =
   | { type: 'paragraph'; content: string }
   | { type: 'pullquote'; content: string; attribution?: string }
   | { type: 'accent'; content: string }
+  // Small, muted italic note — disclaimers / asides under a chapter title.
+  | { type: 'note'; content: string }
   // Large, flush-left Fraunces statement styled to match the title logline.
   | { type: 'statement'; content: string }
   // Centered, tan (--p-bright) highlight line — a recurring emphasis beat.
