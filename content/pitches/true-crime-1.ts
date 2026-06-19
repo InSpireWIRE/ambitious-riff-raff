@@ -95,7 +95,7 @@ const trueCrime1: Pitch = {
         {
           type: 'paragraph',
           content:
-            'Five women are dead. Calhoun stands indicted for all five murders. And the woman who loved him is left to live with what she knew, when she knew it, what it cost her not to ask — and the strange, complicated pride that, in the end, her not-letting-go is part of what helped.',
+            'Five women are dead. Calhoun stands indicted for five murders and counting (we hear more are expected). And the woman who loved him is left to live with what she knew, when she knew it, what it cost her not to ask — and the strange, complicated pride that, in the end, her not-letting-go is part of what helped.',
         },
       ],
     },
@@ -221,6 +221,13 @@ const trueCrime1: Pitch = {
       blocks: [
         {
           type: 'audio',
+          src: '/pitch/true-crime-1/audio/cops-visit-krista.mp3',
+          title: 'Cops Visit Krista to Connect Joanna to Jesse on the Day She Died',
+          description:
+            'Reeling from shock, confusion, and disbelief after investigators present evidence placing Jesse with Joanna Speaks on the day she disappeared, Krista calls the producer struggling to reconcile the man she thought she knew with the mounting evidence against him.',
+        },
+        {
+          type: 'audio',
           src: '/pitch/true-crime-1/audio/voices.mp3',
           title: 'Voices',
           description:
@@ -239,13 +246,6 @@ const trueCrime1: Pitch = {
           title: 'Was Jesse Trying To Prove Something?',
           description:
             "In the aftermath of Jesse's indictment for the murders of Joanna Speaks and Charity Perry, Krista reexamines the relationship through a new lens. Looking back on Jesse's unconventional sexual interests and repeated infidelities, she struggles to understand the motivations behind his behavior and whether she overlooked warning signs along the way.",
-        },
-        {
-          type: 'audio',
-          src: '/pitch/true-crime-1/audio/cops-visit-krista.mp3',
-          title: 'Cops Visit Krista to Connect Joanna to Jesse on the Day She Died',
-          description:
-            'Reeling from shock, confusion, and disbelief after investigators present evidence placing Jesse with Joanna Speaks on the day she disappeared, Krista calls the producer struggling to reconcile the man she thought she knew with the mounting evidence against him.',
         },
       ],
     },
