@@ -269,20 +269,51 @@ const trueCrime1: Pitch = {
             'Because we can record new reflective Krista (the three-years-later, fog-lifted voice), her own retrospective narration can carry the connective tissue between scenes — which shrinks the host further, toward pure record-and-victims duty. Two Krista timelines (living-it and looking-back) do the emotional and narrative work.',
         },
         {
-          type: 'list',
-          boldLead: true,
+          type: 'episodes',
           items: [
-            "Episode One: They Came for Him — A surprise, guns-drawn, multi-car takedown at a gas station detonates Krista's ordinary life. We drop in from inside her POV: the man in her bed, the chaos with no warning. Ends on denial locking into place.",
-            "Episode Two: Not My Jesse — Denial curdles into a need for answers. Still defending him, Krista starts digging on her own — reaching the kinds of people who don't talk to police, working the margins for anything that proves her right. The audience sees what she can't yet: she's building the case against the man she's trying to clear.",
-            "Episode Three: From the Inside — From jail, Jesse keeps his grip: letters, recorded calls, instructions about who to trust and who to avoid. When he tells her he's going to kill himself, the threat lands on her as devotion, not control. We hear his words and her responses — and the audience hears the leash she can't.",
-            "Episode Four: The Names — Fearing he's cheating, she goes looking for another woman — and finds the victims instead. The names that lead back to the man she lives with. Denial cracks.",
-            "Episode Five: Map of the Dead — The unbearable realization: her obsessive check-ins traced his movements and placed him in the windows when the women vanished. The thing she's most ashamed of is the thing that mattered most — and the cops keep coming back to her door.",
-            "Episode Six: He Smelled Like Death — The fear she can't unthink. A remembered night — waking to find him standing over her, the smell that woke her — recast through everything she now knows. Her own memory collides with the charge that started the case: abuse of a corpse.",
-            "Episode Seven: The Whole World Knows — The consequences land on her. Evicted from the apartment they shared, named and attacked online, watching the arraignment of the man she loved — Krista becomes a public figure in a story she never chose.",
-            "Episode Eight: What I Know — Three years later, looking back: acceptance, and a complicated pride that her not-letting-go is part of what helped. The question left open for the listener — and the trial still ahead.",
+            {
+              title: 'They Came for Him',
+              description:
+                "A surprise, guns-drawn, multi-car takedown at a gas station detonates Krista's ordinary life. We drop in from inside her POV: the man in her bed, the chaos with no warning. Ends on denial locking into place.",
+            },
+            {
+              title: 'Not My Jesse',
+              description:
+                "Denial curdles into a need for answers. Still defending him, Krista starts digging on her own — reaching the kinds of people who don't talk to police, working the margins for anything that proves her right. The audience sees what she can't yet: she's building the case against the man she's trying to clear.",
+            },
+            {
+              title: 'From the Inside',
+              description:
+                "From jail, Jesse keeps his grip: letters, recorded calls, instructions about who to trust and who to avoid. When he tells her he's going to kill himself, the threat lands on her as devotion, not control. We hear his words and her responses — and the audience hears the leash she can't.",
+            },
+            {
+              title: 'The Names',
+              description:
+                "Fearing he's cheating, she goes looking for another woman — and finds the victims instead. The names that lead back to the man she lives with. Denial cracks.",
+            },
+            {
+              title: 'Map of the Dead',
+              description:
+                "The unbearable realization: her obsessive check-ins traced his movements and placed him in the windows when the women vanished. The thing she's most ashamed of is the thing that mattered most — and the cops keep coming back to her door.",
+            },
+            {
+              title: 'He Smelled Like Death',
+              description:
+                "The fear she can't unthink. A remembered night — waking to find him standing over her, the smell that woke her — recast through everything she now knows. Her own memory collides with the charge that started the case: abuse of a corpse.",
+            },
+            {
+              title: 'The Whole World Knows',
+              description:
+                'The consequences land on her. Evicted from the apartment they shared, named and attacked online, watching the arraignment of the man she loved — Krista becomes a public figure in a story she never chose.',
+            },
+            {
+              title: 'What I Know',
+              description:
+                'Three years later, looking back: acceptance, and a complicated pride that her not-letting-go is part of what helped. The question left open for the listener — and the trial still ahead.',
+            },
           ],
         },
-        { type: 'stat', value: '8 × 40 min', label: 'Episodes, weekly drop' },
+        { type: 'stat', value: '8 × 30-40 min', label: 'Episodes, weekly drop' },
       ],
     },
     {

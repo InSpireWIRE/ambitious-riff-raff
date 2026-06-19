@@ -132,6 +132,25 @@ function Block({ block, feature }: { block: ChapterBlock; feature?: boolean }) {
         </ul>
       )
 
+    case 'episodes':
+      return (
+        <div className="my-8 space-y-9">
+          {block.items.map((ep, i) => (
+            <div key={i}>
+              <p className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--p-bright)]">
+                Episode {i + 1}
+              </p>
+              <h3 className="mt-1.5 font-[family-name:var(--font-fraunces)] text-xl font-bold italic leading-snug text-[var(--p-cream)] md:text-2xl">
+                {ep.title}
+              </h3>
+              <p className="mt-2 text-lg leading-relaxed text-[var(--p-cream)]/85">
+                {ep.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      )
+
     case 'stat':
       return (
         <div className="my-6 inline-flex flex-col rounded-2xl border border-[var(--p-haze)]/15 bg-[var(--p-panel)] px-7 py-5 shadow-sm">

@@ -28,6 +28,8 @@ export type ChapterBlock =
   // (bold + uppercase) — used for "OUTLET — headline" press lists.
   | { type: 'list'; items: string[]; boldLead?: boolean }
   | { type: 'stat'; value: string; label: string }
+  // Numbered episode breakdown — "EPISODE 1" label, italic/bold title, then blurb.
+  | { type: 'episodes'; items: { title: string; description: string }[] }
 
 export type Chapter = {
   id: string // url-safe anchor
