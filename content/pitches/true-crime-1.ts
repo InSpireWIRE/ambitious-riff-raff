@@ -3,8 +3,8 @@ import type { Pitch } from './types'
 // PLACEHOLDER CONTENT — Craig will replace copy, media, and stats with the real pitch.
 const trueCrime1: Pitch = {
   slug: 'true-crime-1',
-  title: 'True Crime Podcast (untitled)',
-  subtitle: 'A limited-series true crime podcast',
+  title: 'Untitled True Crime Project — The Krista Sinor Story',
+  subtitle: 'A limited true-crime series',
   logline:
     'What happens when love, addiction, and denial blind you to the truth —\nand the truth is\nfive women are dead…',
   coverImage: '/pitch/true-crime-1/cover.jpg',
