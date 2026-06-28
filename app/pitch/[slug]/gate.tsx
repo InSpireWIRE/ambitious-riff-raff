@@ -51,7 +51,9 @@ export default function Gate({ slug, title }: { slug: string; title: string }) {
             Pitch access
           </p>
           <h1 className="mt-2 font-[family-name:var(--font-fraunces)] text-2xl leading-tight text-[var(--p-cream)]">
-            <PitchTitle title={title} />
+            {/* On the gate, drop any " — subtitle" tail so the subject's name
+                stays hidden until after login. */}
+            <PitchTitle title={title.replace(/\s+—\s+.+$/, '')} />
           </h1>
         </div>
 
