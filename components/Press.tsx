@@ -46,6 +46,11 @@ const PRESS = [
     href: 'https://www.imdb.com/title/tt12492922/',
   },
   {
+    outlet: 'IMDb',
+    title: 'Executive Producer — “Summer Sessions” with Leighton Meester',
+    href: 'https://www.imdb.com/title/tt12493580/',
+  },
+  {
     outlet: 'Deadline',
     title: 'Project Purple for Democracy',
     href: 'https://deadline.com/2019/11/trump-thanksgiving-purple-project-1202795004/',
