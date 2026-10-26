@@ -41,8 +41,6 @@ export default function Footer() {
           >
             {[
               { label: 'LinkedIn', href: 'https://linkedin.com/in/iamcraigbland' },
-              { label: 'Reddit', href: 'https://reddit.com/r/AIToolsForSMB' },
-              { label: 'AlignAI', href: 'https://alignai.business' },
             ].map(({ label, href }) => (
               <a
                 key={label}

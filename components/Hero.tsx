@@ -32,7 +32,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-muted text-lg leading-relaxed">
-              An NYC studio for unscripted, docu-series, and branded content. Now building AI tools for the next generation of producers.
+              An NYC studio for unscripted, docu-series, and branded content.
             </p>
           </div>
 
@@ -45,10 +45,10 @@ export default function Hero() {
               <span aria-hidden="true">↓</span>
             </a>
             <a
-              href="#alignai"
+              href="#krista-tapes"
               className="text-fg hover:text-accent transition-colors duration-200 flex items-center gap-2 font-medium"
             >
-              <span>What's next: AlignAI</span>
+              <span>In development: The Krista Tapes</span>
               <span aria-hidden="true">↓</span>
             </a>
           </div>
