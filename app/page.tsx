@@ -3,8 +3,10 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Collaborators from '../components/Collaborators'
 import Work from '../components/Work'
-import AlignAI from '../components/AlignAI'
+// import AlignAI from '../components/AlignAI'  // hidden
 import InspireWire from '../components/InspireWire'
+import KristaTapes from '../components/KristaTapes'
+import Press from '../components/Press'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
@@ -16,8 +18,10 @@ export default function Home() {
       <About />
       <Collaborators />
       <Work />
-      <AlignAI />
+      {/* <AlignAI /> */}
       <InspireWire />
+      <KristaTapes />
+      <Press />
       <Contact />
       <Footer />
     </>

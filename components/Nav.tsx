@@ -35,8 +35,9 @@ export default function Nav() {
             { label: 'About', href: '#about' },
             { label: 'Collaborators', href: '#collaborators' },
             { label: 'Work', href: '#work' },
-            { label: 'AlignAI', href: '#alignai' },
             { label: '!nSpireWIRE', href: '#inspirewire' },
+            { label: 'The Krista Tapes', href: '#krista-tapes' },
+            { label: 'Press', href: '#press' },
             { label: 'Contact', href: '#contact' },
             { label: 'Pitch', href: '/pitch/true-crime-1' },
           ].map(({ label, href }) => (
