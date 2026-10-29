@@ -45,7 +45,7 @@ export default function KristaTapes() {
               variants={itemVariants}
               className="font-serif font-semibold text-5xl lg:text-6xl leading-tight tracking-tight"
             >
-              She said he couldn&rsquo;t hurt a fly. Hear what she says now.
+              Police saw no connection. Krista Sinor found them on his phone.
             </motion.h2>
 
             <div className="space-y-4">
